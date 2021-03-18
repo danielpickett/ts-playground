@@ -1,0 +1,15 @@
+{
+  "name": "ts-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "tsify": "^5.0.2",
+    "typescript": "^4.2.3",
+    "watchify": "^4.0.0"
+  },
+  "scripts": {
+    "start": "watchify index.ts -p [ tsify --noImplicitAny ] -o bundle.js & browser-sync -w"
+  }
+}
